@@ -1,0 +1,50 @@
+<html>
+<body>
+<form name=f1>
+enter number <input type=text name=t1><br>
+<input type=button value="ok" onclick="test()">
+</form>
+</body>
+<script>
+function empty(a)
+{
+b=a.length;
+if(b==0)
+{
+return true;
+}
+}
+function len(a)
+{
+b=a.length
+if(b<10)
+{
+return true;
+}
+}
+function isalpha(a)
+{
+return isNaN(a)
+}
+function test()
+{
+if(empty(f1.t1.value))
+{
+alert("plz enter mobile number")
+}
+else if (len (f1.t1.value))
+{
+alert("plz enter complete number")
+}
+else if (alpha(f1.t1.value))
+{
+alert("enter number")
+}
+else
+{
+alert("thanks")
+}
+}
+
+
+</script>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Decision making </title>
+</head>
+<body bgcolor=orange>
+<h1 align=center color=purple> WAP to find percentage of four subject marks </h1>
+<hr color=purple>
+<script>
+a=parseFloat(prompt("enter number"))
+b=parseFloat(prompt("enter number"))
+c=parseFloat(prompt("enter number"))
+d=parseFloat(prompt("enter number"))
+e=(a+b+c+d)*100/400
+f=eval(e)
+g=a+b+c+d
+document.write("<br><font size=6 color=green>Marks of math= "+a+"</font>")
+document.write("<br><font size=6 color=blue> Marks of english= "+b+"</font>")
+document.write("<br><font size=6 color=pink> Marks of hindi= "+c+"</font>")
+document.write("<br><font size=6 color=yellow> Marks of Sst= "+d+"</font>")
+document.write("<br><font size=6 color=brown> Your Percentage= "+f+"</font>")
+document.write("<br><font size=6 color=mustard> total marks = "+g+"</font>")
+if(f>=50)
+{
+document.write("<table width=100% bgcolor=skyblue height=20px><tr><td>")
+document.write("<table border=0 align=left height=20px width="+f+"%><tr><td width="+f+"%  bgcolor=green><font color=white>You are Pass</font></td></tr></table>")
+document.write("</td><tr></table>")
+///document.write("<br><font size=6 color=red>You are pass</font>")
+}
+else
+{
+document.write("<table width=100% bgcolor=skyblue height=20px><tr><td>")
+document.write("<table border=0 align=left height=20px width="+f+"%><tr><td width="+f+"%  bgcolor=red><font color=white>You are Fail</font></td></tr></table>")
+document.write("</td><tr></table>")
+
+///document.write("<br><font size=6 color=blue>You are fail</font>")
+}
+</script>
+</body>
+</html>

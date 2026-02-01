@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> hi </title>
+</head>
+<body>
+<form name=f1>
+<table border=1 align=center width=30% height=200px >
+<tr> 
+<td colspan=4> <input type=text name=t1 size=30> </td>
+</tr>	
+<tr> 
+<td><input type=button value=1 onclick="one(1)"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=2 onclick="one(2)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=3 onclick="one(3)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=+ onclick="one('+')"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=4 onclick="one(4)"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=5 onclick="one(5)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=6 onclick="one(6)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=- onclick="one('-')"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=7 onclick="one(7)"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=8 onclick="one(8)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=9 onclick="one(9)"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=* onclick="one('*')"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=0 onclick="one(0)"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=c onclick="one('c')"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value== onclick="one('=')"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=/ onclick="one('/')"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+</body>
+<script>
+function one(a)
+{
+if(a=='=')
+{
+f1.t1.value=eval(f1.t1.value)
+}
+else if(a=='c')
+{
+f1.t1.value=""
+}
+else
+{
+f1.t1.value=f1.t1.value+a
+}
+}
+</script>

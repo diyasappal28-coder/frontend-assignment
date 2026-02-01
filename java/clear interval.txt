@@ -1,0 +1,34 @@
+<html>
+<body>
+<input type=button value="start" onclick="start">
+<input type=button value="stop" onclick="stop">
+</body>
+<script>
+a=1
+function test()
+{
+if(a==1)
+{
+document.bgcolor="red"
+a=2
+}
+else if (a==2)
+{
+document.bgcolor="green"
+a=3
+}
+else if (a==3)
+{
+document.bgcolor="blue"
+a=1
+}
+}
+function start()
+{
+ref=setInterval("test()",1000)
+}
+function stop()
+{
+clearInterval(ref)
+}
+</script>

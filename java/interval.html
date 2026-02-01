@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1 align=center id="one"> Hk computers </h1>
+</body>
+<script>
+a=1
+function test()
+{
+if(a==1)
+{
+document.getElementById("one").style.color="white";
+a=0
+}
+else
+{
+document.getElementById("one").style.color="black";
+a=1
+}
+}
+setInterval("test()",1000);
+</script>

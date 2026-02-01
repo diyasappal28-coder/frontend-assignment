@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Decision making </title>
+</head>
+<body bgcolor=orange>
+<h1 align=center color=purple> WAP to find percentage of four subject marks </h1>
+<hr color=purple>
+<script>
+a=parseFloat(prompt("enter number"))
+b=parseFloat(prompt("enter number"))
+c=parseFloat(prompt("enter number"))
+d=parseFloat(prompt("enter number"))
+e=(a+b+c+d)*100/400
+f=eval(e)
+g=a+b+c+d
+document.write("<br><font size=6 color=green>Marks of math= "+a+"%</font>")
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>"+a+"%")
+document.write("<table border=1 align=left width="+a+"% height=30px> <tr><td width="+a+"% bgcolor=green><font color=black></font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+document.write("<br><font size=6 color=blue> Marks of english= "+b+"%</font>")
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>"+b+"%")
+document.write("<table border=1 align=left width="+b+"% height=30px> <tr><td width="+b+"% bgcolor=green><font color=black></font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+document.write("<br><font size=6 color=pink> Marks of hindi= "+c+"</font>")
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>"+c+"%")
+document.write("<table border=1 align=left width="+c+"% height=30px> <tr><td width="+c+"% bgcolor=green><font color=black></font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+document.write("<br><font size=6 color=yellow> Marks of Sst= "+d+"</font>")
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>"+d+"%")
+document.write("<table border=1 align=left width="+d+"% height=30px> <tr><td width="+d+"% bgcolor=green><font color=black></font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+document.write("<br><font size=6 color=brown> Your Percentage= "+f+"</font>")
+document.write("<br><font size=6 color=mustard> total marks = "+g+"</font>")
+if(f>=50)
+{
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>")
+document.write("<table border=1 align=left width="+f+"% height=30px> <tr><td width="+f+"% bgcolor=green><font color=black>You are pass</font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+}
+else
+{
+document.write("<table bgcolor=lightblue width=100% height=30px > <tr> <td>")
+document.write("<table border=1 align=left width="+f+"% height=30px> <tr><td width="+f+"% bgcolor=red><font color=black>You are fail</font></td></tr></table>" )
+document.write("</td> <tr> </table>")
+
+}
+</script>
+</body>
+</html>

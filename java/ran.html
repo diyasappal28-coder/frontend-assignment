@@ -1,0 +1,21 @@
+<html>
+<body>
+<form name="f1">
+Your OTP<input type=text name=t1><br>
+<input type=button value="Generate OTP" onclick="test()">
+</form>
+</body>
+<script>
+function test()
+{
+a=Math.random()*10000;
+b=Math.floor(a)
+if(b>1000)
+{
+f1.t1.value=b
+}
+}												
+
+
+</script>
+</html>

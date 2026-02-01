@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> hi </title>
+</head>
+<body>
+<form name=f1>
+<table border=1 align=center width=30% height=200px >
+<tr> 
+<td colspan=4> <input type=text name=t1 size=30> </td>
+</tr>	
+<tr> 
+<td><input type=button value=1 onclick="one()"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=2 onclick="two()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=3 onclick="three()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=+ onclick="plus()"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=4 onclick="four()"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=5 onclick="five()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=6 onclick="six()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=- onclick="minus()"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=7 onclick="seven()"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=8 onclick="eight()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=9 onclick="nine()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=* onclick="multiply()"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+<tr> 
+<td><input type=button value=0 onclick="zero()"> &nbsp; &nbsp; &nbsp; &nbsp
+<input type=button value=c onclick="clear3()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value== onclick="equal()"> &nbsp; &nbsp; &nbsp; &nbsp
+ <input type=button value=/ onclick="divide()"> &nbsp; &nbsp; &nbsp; &nbsp
+</td>
+</tr>
+</body>
+<script>
+function one()
+{
+f1.t1.value=f1.t1.value+"1";
+}
+</script>
+<script>
+function two()
+{
+f1.t1.value=f1.t1.value+"2";
+}
+</script>
+<script>
+function three()
+{
+f1.t1.value=f1.t1.value+"3";
+}
+</script>
+<script>
+function four()
+{
+f1.t1.value=f1.t1.value+"4";
+}
+</script>
+<script>
+function plus()
+{
+f1.t1.value eval(f1.t1.value+"+");
+}
+</script>
+<script>
+function five()
+{
+f1.t1.value=f1.t1.value+"5";
+}
+</script>
+<script>
+function six()
+{
+f1.t1.value=f1.t1.value+"6";
+}
+</script>
+<script>
+function minus()
+{
+f1.t1.value=f1.t1.value+"-";
+}
+</script>
+<script>
+function seven()
+{
+f1.t1.value=f1.t1.value+"7";
+}
+</script>
+<script>
+function eight()
+{
+f1.t1.value=f1.t1.value+"8";
+}
+</script>
+<script>
+function nine()
+{
+f1.t1.value=f1.t1.value+"9";
+}
+</script>
+<script>
+function multiply()
+{
+f1.t1.value eval(f1.t1.value+"*");
+}
+</script>

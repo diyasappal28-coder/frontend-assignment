@@ -1,0 +1,16 @@
+<html>
+<body>
+<h1> DIGITAL CLOCK</H1>
+<form name="f1">
+<input type=text size=2 name=hh>:<input type=text size=2 name=mm>:<input type=text name=ss size=2>
+</form>
+<script>
+function test()
+{
+d=new Date( )
+f1.hh.value=d.getHours();
+f1.mm.value=d.getMinutes();
+f1.ss.value=d.getSeconds();
+}
+setInterval("test()",1000);
+</script>

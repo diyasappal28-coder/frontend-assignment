@@ -1,0 +1,24 @@
+<html>
+<body align=center>
+<form name=f1>
+enter ur name<input type=text name=t1>
+<br> <br>
+<input type =button value="ok" onclick="test()">
+<script>
+function ok()
+{
+if(f1.t1.value=" ")
+{
+return "enter your name"
+}
+else 
+{
+return "Thanks for submitting your name";
+}
+}
+
+function test()
+{
+alert(ok());
+}
+</script>
